@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Paramesh Gunasekaran | Open Source Projects | GitHub Pages</title>
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/modern-business.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Paramesh Gunasekaran</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right"></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">WinLIRC.NET
+                    <small>Windows-based Linux Infrared Remote Control</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li class="active">Windows-based Linux Infrared Remote Control</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="https://parameshg.github.io" class="list-group-item">Home</a>
+                    <a href="#introduction" class="list-group-item">Introduction</a>
+                    <a href="#pre-installation" class="list-group-item">Pre-Installation</a>
+                    <a href="#installation" class="list-group-item">Installation</a>
+                    <a href="#post-installationl" class="list-group-item">Post-Installation</a>
+                    <a href="#uninstalling" class="list-group-item">Uninstalling LIRC </a>
+                    <a href="#troubleshooting" class="list-group-item">Troubleshooting</a>
+                    <a href="#faq" class="list-group-item">FAQ</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h4 id="introduction"><b>Introduction</b></h4>
+				<br/>
+				<b>About LIRC</b>
+                <p align="justify">Linux Infra-Red Control program, popularly known as LIRC is a package that allows decoding and sending infra-red signals of many (but not all) commonly used remote controls. For more information, visit http://www.lirc.org</p>
+				<b>About WinLIRC</b>
+				<p align="justify">WinLIRC is the Windows equivalent of LIRC, the Linux Infrared Remote Control program. WinLIRC allows transmitting and receiving standard infrared remote control signals in Microsoft Windows platform. This allows controlling computer systems using almost any standard infrared remote control. It also allows computer systems to control other equipment which uses these signals (stereo equipment). For more information, visit http://winlirc.sourceforge.net</p>
+				<b>About WinLIRC.NET</b>
+				<p align="justify">WinLIRC.NET (WLN) is a software framework developed using Microsoft .NET framework v4.0 over the open source WinLIRC program. It proved a .NET wrapper over the existing WinLIRC program facilitating rapid development of .NET programs for Infra-Red signal communication.</p>
+				<br/>			
+				<h4 id="pre-installation"><b>Pre-Installation</b></h4>
+				<br/>
+				<b>Pre-Requisites</b>
+				<p align="justify">The following are the pre-requisites for deploying and installing WinLIRC.NET.</p>
+				<ul>
+					<li>WinLIRC supported hardware</li>
+					<li>WinLIRC supported hardware device driver</li>
+					<li>Microsoft Windows or a flavor of Linux operating system</li>
+					<li>Microsoft .NET Framework v4.0 or higher</li>
+					<li>Microsoft Messaging Queue v3.0 or higher</li>
+					<li>Unrestricted administrative privileges on target machines of WinLIRC and WinLIRC.NET</li>
+				</ul>
+				<b>Supported Hardware</b>
+				<p align="justify">The following are the hardware supported by LIRC, WinLIRC and WinLIRC.NET. However, beware that not all of the below hardware (except for Iguana USB IR Transceiver) are guaranteed to the fully functional and tested at the time of writing of this document. At some point of time, it is optimistically anticipated that all the LIRC and WinLIRC supported hardware are guaranteed to be fully functional with WLN.</p>
+				<ul>
+					<li>Audio Receiver</li>
+					<li>Iguana USB IR Transceiver</li>
+					<li>SnapStream FireflyMini Remote</li>
+					<li>Irman and compatable receivers</li>
+					<li>MaxterPlus</li>
+					<li>Microsoft MCE Receiver</li>
+					<li>Serial Receiver</li>
+					<li>Streamzap</li>
+					<li>UDP</li>
+					<li>USB IR Toy</li>
+				</ul>
+				<b>Supported Operating System</b>
+				<p align="justify">The following are the operating systems supported for LIRC, WinLIRC and WinLIRC.NET. Beware, not all LIRC, and WinLIRC supported operating systems (except for Microsoft Windows XP) are fully functional or tested with WinLIRC.NET during the time of writing this document. At some point of time, it is optimistically anticipated that all the LIRC and WinLIRC supported operating systems are guaranteed to be fully functional.</p>
+				<b>WinLIRC Supported Operating Systems</b>
+				<p align="justify">The following are the operating systems supported for WinLIRC. For any discrepancies, visit WinLIRC web site at http://winlirc.sourceforge.net.</p>
+				<ul>
+					<li>Microsoft Windows XP</li>
+					<li>Microsoft Windows Vista</li>
+					<li>Microsoft Windows Seven</li>
+					<li>Microsoft Windows Server 2003</li>
+					<li>Microsoft Windows Server 2008</li>
+					<li>Ubuntu 10.10</li>
+				</ul>
+				<b>WinLIRC.NET Supported Operating Systems</b>
+				<p align="justify">Following are the Microsoft Windows operating system versions supported by WinLIRC.NET.</p>
+				<ul>
+					<li>Microsoft Windows XP</li>
+					<li>Microsoft Windows Vista</li>
+					<li>Microsoft Windows Seven</li>
+					<li>Microsoft Windows Server 2003</li>
+					<li>Microsoft Windows Server 2008</li>
+				</ul>
+				<b>Installation Approaches</b>				
+				<p align="justify">The LIRC and the WinLIRC programs provide installer on Windows and Linux platforms. They may also provide process for manual build and configuration, but they are not covered in this document. For more information, visit LIRC and WinLIRC program web sites. WLN recommends and supports only the installer approach for deploying and installing LIRC/WinLIRC programs. WLN supports both manual and Windows installer form of deployment and installation.</p>
+				<br/>
+				<h4 id="installation"><b>Installation</b></h4>
+				<br/>
+				<b>Hardware Device Driver</b>				
+				<p align="justify">Before a LIRC supported hardware is plugged in into the system, obtain the appropriate hardware device from the corresponding company or company web site. At the time of writing of this document, it is not guaranteed that WinLIRC.NET would be fully functionally with all WinLIRC supported hardware except for Iguana transceiver. Iguana transceiver hardware device driver can be downloaded at <a href="http://iguanaworks.net/downloads/windows/iguanaIR-1.0.1.exe" target="_blank">http://iguanaworks.net/downloads/windows/iguanaIR-1.0.1.exe</a>. Download iguanaIR-1.0.1.exe and install them before any of their transceivers are plugged-in into the system. At some point of time in the future, it is anticipated that WinLIRC.NET is guaranteed to with any others or all supported hardware of WinLIRC.</p>
+				<b>LIRC</b>
+				<img src="./images/winlirc-setup.png" align="right" />
+				<p align="justify">For detailed installation of LIRC over a Linux platform, visit <a href="http://www.lirc.org" target="_blank">http://www.lirc.org</a>. At the time of writing of this document, it is not guaranteed that WinLIRC.NET would be fully functionally with LIRC in any flavor of Linux platform. At some point of time in the near future, it is anticipated that WinLIRC.NET is guaranteed to with all supported flavors of LIRC.</p>
+				<b>WinLIRC</b>				
+				<p align="justify">Download the latest version of WinLIRC from <a href="http://winlirc.sourceforge.net" target="_blank">http://winlirc.sourceforge.net</a>. At the time of writing this document, the latest WinLIRC package is winlirc-0.8.7a-(15-05-2011).zip which can be downloaded from <a href="http://sourceforge.net/projects/winlirc/files/winlirc/0.8.7a/winlirc-0.8.7a-%2815-05-2011%29.zip/download" target="_blank">http://sourceforge.net/projects/winlirc/files/winlirc/0.8.7a/winlirc-0.8.7a-%2815-05-2011%29.zip/download</a>.
+				Extract the contents of the zip file into the WinLIRC installation destination directory. Run winlirc.exe from the WinLIRC installation directory and configure input plug-in and configuration file. As of the time of writing of this document, all other plug-ins other than iguanaIR.dll is not guaranteed to work properly with WinLIRC.NET. The appropriate WinLIRC remote control configuration file can be downloaded at <a href="http://lirc.sourceforge.net/remotes" target="_blank">http://lirc.sourceforge.net/remotes</a>.
+				For more detailed technical information, visit <a href="http://winlirc.sourceforge.net/technicaldetails.html" target="_blank">http://winlirc.sourceforge.net/technicaldetails.html</a>. For developer information regarding WinLIRC server and how to interact with it, visit http://winlirc.sourceforge.net/developer.html.</p>				
+				<b>WinLIRC.NET</b>
+				<p align="justify">This section describes the procedure involved in the installation of WinLIRC.NET manually as well as via Microsoft Windows Installer using MSI files on any of the support Microsoft Windows platform.</p>
+				<b>Manual Installation</b>
+				<p align="justify">This section describes the procedure involved in the installation of WLN manually using raw physical files. Please note that this approach is recommended only for expert users.</p>
+				<p align="justify">Following are the physical files required to perform a manual installation of WLN in any supported Microsoft Windows platform. It is recommended to use always the greatest version of these files to experience full functionalities and features.</p>
+				<ul>
+					<li>WinLIRC.NET.dll</li>
+					<li>WinLIRC.Messages.dll</li>
+					<li>WinLIRC.Configuration.dll</li>
+					<li>WinLIRC.Test.dll</li>
+					<li>WinLIRC.Transmitter.Daemon.exe</li>
+					<li>WinLIRC.Receiver.Daemon.exe</li>
+					<li>WinLIRC.Configuration.Editor.exe</li>
+					<li>WinLIRC.Debug.exe</li>
+					<li>WinLIRC.Transmitter.Daemon.exe.config</li>
+					<li>WinLIRC.Receiver.Daemon.exe.config</li>
+					<li>WinLIRC.Test.dll.config</li>
+					<li>WinLIRC.Debug.exe.config</li>
+				</ul>
+				<p align="justify">Note that all *.config files always goes along with it’s respecting *.exe or *.dll files. If a DLL or an EXE cannot find its corresponding CONFIG files, the component may fail to function properly. The files WinLIRC.Test.dll and WinLIRC.Test.dll.config are necessary if you’re planning to perform unit testing using Microsoft Visual Studio .NET 2010. The files WinLIRC.Debug.exe and WinLIRC.Debug.exe.config are required only for testing and debugging purposes – testing WinLIRC.NET signal transmitter and receiver. The WinLIRC.NET configuration editor, WinLIRC.Configuration.Editor.exe is required only for generate WinLIRC.NET remote control configuration file from WinLIRC remote configuration file. Once and only when WinLIRC.NET configuration file is generated and loaded by WinLIRC.NET transmitter and receiver daemon, WinLIRC.NET is fully functional. The file WinLIRC.NET.dll contains core framework functionality which is accessed by both WLN transmitter and receiver daemon.</p>
+				<p align="justify">It is not recommended to deploy any unnecessary files/components in production environment.</p>
+				<b>Installation and Configuration Procedure</b>
+				</br>
+				</br>
+				<b>Step #1: Acquisition of files</b>
+				<p align="justify">Obtain all necessary WLN files and copy them to desired installation folder.</p>
+				<b>Step #2: Registering in GAC</b>
+				</br>
+				<p align="justify">Register the following in GAC (Global Assembly Cache) using gacutil.exe which is provided with .NET framework.</p>
+				<ul>
+					<li>WinLIRC.NET.dll</li>
+					<li>WinLIRC.Messages.dll</li>
+					<li>WinLIRC.Configuration.dll</li>
+				</ul>
+				Syntax:				
+				<ul>
+					<li>gacutil.exe -i [full path to DLL]</li>
+				</ul>
+				Commands:
+				<ul>
+					<li>gacutil.exe -i [full path to DLL WinLIRC.NET.dll]</li>
+					<li>gacutil.exe -i [full path to DLL WinLIRC.Messages.dll]</li>
+					<li>gacutil.exe -i [full path to DLL WinLIRC.Configuration.dll]</li>
+				</ul>
+				<b>Step #3: Registering Windows Services</b>
+				<p align="justify">Register WLN transmitter (WinLIRC.Transmitter.Daemon.exe) and receiver daemon (WinLIRC.Receiver.Daemon.exe) services to system services using sc.exe provided in any of WLN supported Microsoft Windows platform. By default, the Windows service would be registered to run under LOCALSYSTEM system account in Manual startup mode. This can be changed to run any system/user account of appropriate privilege in Automatic mode using Windows Services Microsoft Management Console (MMC).</p>
+				Syntax:
+				<ul>
+					<li>sc.exe create [windows service name] binPath=[whitespace][full path to windows service executable]</li>
+				</ul>
+				Commands:
+				<ul>
+					<li>sc.exe create WinLIRC.NET-Transmitter binPath=[whitespace][full path to WinLIRC.Transmitter.Daemon.exe]</li>
+					<li>sc.exe create WinLIRC.NET-Transmitter binPath=[whitespace][full path to WinLIRC.Receiver.Daemon.exe]</li>
+				</ul>
+				<b>Step #4: Creating Microsoft Messaging Queues</b>
+				<p align="justify">Create two non-transactional private MSMQs with sufficient privileges to read and write by the WinLIRC.NET transmitter and receiver daemon, using Microsoft Messaging Management Console - one for WinLIRC.NET transmitter to send outbound IR signals from WinLIRC.NET infrastructure to WinLIRC (e.g. winlirc_send) and one for WinLIRC.NET receiver to receive inbound IR signal from WinLIRC into WinLIRC infrastructure (e.g. winlirc_recv).</p>
+				<b>Step #5: Building WLN Remote Control Configuration</b>
+				<p align="justify">Create a WLN configuration file (a XML file) for the desired remote control using WLN Configuration Editor, WinLIRC.Configuration.Editor.exe from WinLIRC remote control configuration file. WLN Configuration Editor facilitates mapping for remote control keys from WinLIRC to WLN.</p>
+				<b>Step #6: Configuring Transmitter</b>
+				<p align="justify">Open WLN transmitter daemon configuration file (WinLIRC.Transmitter.Daemon.exe.config) and update the following in settings XML tag under Configuration - as required and needed.</p>
+				<ul>
+					<li>Locate the executable, Transmit.exe of WinLIRC in its installation directory and update its full path in the Client attribute.</li>
+					<li>Locate the WLN remote configuration file and update its full path in the RemoteKeys attribute.</li>
+					<li>Add/remove/clear applications under Applications XML tag as needed.</li>
+					<li>Update ID attribute with a unique GUID for every application configured.</li>
+					<li>Update the MSMQ path for every application desired to communicate with WLN and transmit IR signals.</li>
+				</ul>
+				<b>Step #7: Configuration Receiver</b>
+				<p align="justify">Open WLN receiver daemon configuration file (WinLIRC.Receiver.Daemon.exe.config) and update the following in settings XML tag under Configuration - as required and needed.</p>
+				<ul>
+					<li>Specify WinLIRC port number in Port attribute. By default, WinLIRC sends out decoded IR signals at the port number 8765.</li>
+					<li>Locate the WLN remote configuration file and update its full path in the RemoteKeys attribute.</li>
+					<li>Add/remove/clear applications under Applications XML tag as needed.</li>
+					<li>Update ID attribute with a unique GUID for every application configured.</li>
+					<li>Update the MSMQ path for every application desired to communicate with WLN and transmit IR signals.</li>
+				</ul>
+				<b>Step #8: Starting up Transmitter and Receiver</b>
+				<p align="justify">Start WLN transmitter and receiver using Windows Services Microsoft Management Console. Change the services startup mode to Automatic if required to let the services startup during system startup automatically.</p>
+				<b>Step #9: Testing Transmitter and Receiver</b>
+				<p align="justify">Open WNL Debug configuration file (WinLIRC.Debug.exe.config ) and update the setting WinLIRC_TransmitterQueue and WinLIRC_ReceiverQueue with the full path of the created signal transmitter and receiver MSMQ. Execute WLN Debug (WinLIRC.Debug.exe) and open signal transmitter and receiver. Start the receiver, send a signal using transmitter and verify is the same signal is received by the receiver. Ensure that you execute WLN Debug signal transmitter in the machine where WLN transmitter daemon is installer and WLN Debug signal receiver in the machine where WLN receiver daemon is installed and properly configured to wire up each other.</p>
+				<b>Step #10: Using WLN Messages</b>
+				<p align="justify">WLN Messages is a library which facilitates any external application to communicate with WLN framework for sending and receiving IR signals. Any external application that desires to communicate with WLN infrastructure should have the configuration settings WinLIRC_TransmitterQueue and WinLIRC_ReceiverQueue in its configuration file (*.config). WLN Debug is one such application that uses WLN Messages which is built for testing and debugging purposes.</p>				
+				<b>Windows Installer Installation</b>
+				<p align="justify">This section shows the installer screenshot of WLN MSI installations.</p>
+				<b>WinLIRC.NET Complete Suite</b>
+				<p align="justify">This section shows the installer screenshot of WLN (A complete suite with WLN debug, WLN configuration builder, and unit test library and batch files to create/delete/start/stop WLN transmitter/receiver daemon windows services) installation.</p>
+				<p align="justify">Ensure that you’ve the following files before your start the installation.</p>
+				<ul>
+					<li>WinLIRC.NET.msi</li>
+					<li>setup.exe</li>
+				</ul>
+				<p align="justify">Execute the MSI file, WinLIRC.NET.msi to start the installation of WinLIRC.NET (complete suite).</p>
+				<img src="./images/winlirc-net-installation-1.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-installation-2.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-installation-3.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-installation-4.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-installation-5.png" align="center" />
+				<br /><br />
+				<b>WinLIRC.NET Messages</b>
+				<p align="justify">This section shows the installer screenshot of WLN Messages installation.</p>
+				<p align="justify">Ensure that you’ve the following files before your start the installation.</p>
+				<ul>
+					<li>WinLIRC.Messages.msi</li>
+					<li>setup.exe</li>
+				</ul>
+				<p align="justify">Execute the MSI file, WinLIRC.Messages.msi to start the installation of WinLIRC Messages.</p>
+				<img src="./images/winlirc-net-messages-installation-1.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-messages-installation-2.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-messages-installation-3.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-messages-installation-4.png" align="center" />
+				<br /><br />
+				<img src="./images/winlirc-net-messages-installation-5.png" align="center" />
+				<br /><br />				
+				<h4 id="post-installation"><b>Post-Installation</b></h4>
+				<br/>
+				<p align="justify">When the installation of WinLIRC.NET is done using manual procedures or a MSI files, check if the infrastructure is up and running ready to use.</p>
+				<b>Testing Transmitter and Receiver</b>
+				<p align="justify">Open WNL Debug configuration file (WinLIRC.Debug.exe.config) and update the setting WinLIRC_TransmitterQueue and WinLIRC_ReceiverQueue with the full path of the created signal transmitter and receiver MSMQ (If not created, create them). Execute WLN Debug (WinLIRC.Debug.exe) and open signal transmitter and receiver. Start the receiver, send a signal using transmitter and verify is the same signal is received by the receiver. Ensure that you execute WLN Debug signal transmitter in the machine where WLN transmitter daemon is installer and WLN Debug signal receiver in the machine where WLN receiver daemon is installed and properly configured to wire up each other.</p>
+				<b>Using WLN Messages</b>
+				<p align="justify">WLN Messages is a library which facilitates any external application to communicate with WLN framework for sending and receiving IR signals. Any external application that desires to communicate with WLN infrastructure should have the configuration settings WinLIRC_TransmitterQueue and WinLIRC_ReceiverQueue in its configuration file (*.config). WLN Debug is one such application that uses WLN Messages which is built for testing and debugging purposes. For more detailed information, check WinLIRC.NET Developer Guide.</p>
+				<br />
+				<h4 id="uninstalling"><b>Uninstalling LIRC Programs</b></h4>
+				<br />
+				<p align="justify">For uninstalling LIRC from any flavor of Linux platform, visit http://www.lirc.org. Since the installation of WinLIRC is just an XCopy, the un-installation of WinLIRC is as simple as deleting WinLIRC files and directories.</p>
+				<p align="justify">If WinLIRC.NET was installed using its MSI file, use Add/Remove MMC to remove WinLIRC.NET. If it was installed using a manual installation procedure, follow the below procedure to uninstall WLN.</p>
+				<b>Step #1: Stopping transmitter and receiver</b>
+				<p align="justify">Stop the WLN transmitter and receiver daemon services using Windows Services MMC.</p>
+				<b>Step #2: Unregistering from GAC</b>
+				<p align="justify">ShFusion allows easy un-installation of assemblies (DLLS). Right click the following DLLs and select Uninstall to remove them from GAC.</p>
+				<ul>
+					<li>WinLIRC.NET.dll</li>
+					<li>WinLIRC.Messages.dll</li>
+					<li>WinLIRC.Configuration.dll</li>
+				</ul>
+				<b>Step #3: Removing files</b>
+				<p align="justify">This is just as simple as deleting WLN files and directories from its installation destinations.</p>				
+				<br />
+				<h4 id="troubleshooting"><b>Troubleshooting</b></h4>
+				<br />
+				<b>How to check if WinLIRC is decoding and receiving IR signals?</b>
+				<p align="justify">In Windows platform, open Command Prompt (cmd.exe) and telnet to WinLIRC port. By default, WinLIRC sends all decoded IR signals at the port 8765.</p>
+				<br />
+				<h4 id="faq"><b>FAQ</b></h4>
+				<br />
+				<b>What is IR?</b>
+				<p align="justify">Infrared (IR) light is electromagnetic radiation with a wavelength longer than that of visible light, measured from the nominal edge of visible red light at 0.74 micrometers, and extending conventionally to 300 micrometers. These wavelengths correspond to a frequency range of approximately 1 to 400THz and include most of the thermal radiation emitted by objects near room temperature. Microscopically, IR light is typically emitted or absorbed by molecules when they change their rotational-vibrational movements. For more details, visit <a href="http://en.wikipedia.org/wiki/Infrared" target="_blank">http://en.wikipedia.org/wiki/Infrared</a>.</p>
+				<b>What is LIRC?</b>
+				<p align="justify">LIRC is a package that allows you to decode and send infra-red signals of many (but not all) commonly used remote controls. For more details, visit <a href="http://www.lirc.org">http://www.lirc.org</a>.</p>
+				<b>What is WinLIRC?</b>
+				<p align="justify">WinLIRC allows you to transmit and receive standard infrared remote control signals. This allows you to control your computer using almost any standard infrared remote control. It also allows your computer to control other equipment which uses these signals (stereo equipment). WinLIRC is the Windows equivalent of LIRC, the Linux Infrared Remote Control program. WinLIRC (through version 0.6) was originally written by Jim Paris. Later releases are written and maintained on sourceforge. For more details, visit <a href="http://winlirc.sourceforge.net" target="_blank">http://winlirc.sourceforge.net</a>.</p>
+				<b>What is a transceiver?</b>
+				<p align="justify">A transceiver is a device that has both a transmitter and receivers which are combined and share common circuitry or a single housing. If no circuitry is common between transmit and receive functions, the device is a transmitter-receiver. The term originated in the early 1920s. Technically, transceivers must combine a significant amount of the transmitter and receiver handling circuitry. For more details, visit <a href="http://en.wikipedia.org/wiki/Transceiver" target="_blank">http://en.wikipedia.org/wiki/Transceiver</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Paramesh Gunasekaran 2015-2017</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
